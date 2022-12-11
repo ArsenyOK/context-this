@@ -1,0 +1,21 @@
+Context 'this' in JavaScript
+
+Context in JS it's an interesting topic, but not for beginners. Because They can't realize How does 'this' behave?
+And for beginners hard to understand that topic. In this article I'll try to explain you with simple tongue :)
+
+The 'this' is a pointer who points to Object Javascript
+
+We take 'this' in the place where we execute or call function. For pitch I'll show you the example below
+
+For example:
+
+`console.log(this)`; // Interesting What we will have?
+
+That expression shows us global window. Why? We don't have function or object in prev example and Context 'this' will take in object Window 
+Because It is the outermost JavaScript context.
+
+Remember: Context only makes sense inside functions.
+
+
+Error: nested function calls
+
