@@ -2,7 +2,7 @@
 In this topic I'll try to explain about `this` with simple tongue
 So What I know beginners are familiar with this topic but they can't or don't understand word `this` deeply. I reckon It's a significant topic for any level.
 
-Let's start
+Let's start :metal:
 
 ### `this` is a pointer who points to JavaScript Object
 Below I'll show you examples.
@@ -156,3 +156,32 @@ console.log(max, 'max');
 
 
 **Remember We can't send context to arrow functions, therefore only for function declaration**
+
+## Conclusion
+`this` is significant thing and now We know about it deeply :blush:
+
+**I wanna mention about `use strict` mode** :smirk:
+
+*In this case We get again `window`*
+```no-highlight
+const callThis = function () {
+  return this;
+};
+
+console.log(callThis(), "callThis");
+```
+
+
+*In this case we get `undefined`*
+```no-highlight
+'use strict'
+
+const callThis = function () {
+  return this;
+};
+
+console.log(callThis(), "callThis");
+```
+
+
+
